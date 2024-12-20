@@ -1,0 +1,40 @@
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>URL to Iframe</title> 
+  <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        #urlFormContainer {
+            padding: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        #contentFrame {
+            width: 100%;
+            height: calc(50vh - 50px); /* Adjust height as needed */
+            border: none;
+        }
+        #countdownTimer {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style> 
+ </head> 
+ <body> 
+  <div id="urlFormContainer" style="display: none;"> 
+   <form id="urlForm"> 
+    <label for="urlInput">URL:</label> 
+    <input type="text" id="urlInput" name="urlInput" required> 
+    <button type="submit">Submit</button> 
+   </form> 
+  </div> 
+  <iframe id="contentFrame" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen="true" scrolling="no" src="https://crichype.fun/p3/?id=Astro"> </iframe> 
+  <div id="countdownTimer">
+   Token expires in 2 hours and 37 minutes.
+  </div> 
+  <script>
